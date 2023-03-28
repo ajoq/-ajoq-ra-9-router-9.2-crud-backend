@@ -13,6 +13,7 @@ app.use(
     })
 );
 app.use(function (req, res, next) {
+    res.set("Access-Control-Allow-Origin", "*");
     res.setHeader("Content-Type", "application/json");
     next();
 });
