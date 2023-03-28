@@ -14,6 +14,7 @@ app.use(
 );
 app.use(function (req, res, next) {
     res.set("Access-Control-Allow-Origin", "*");
+    res.set("Access-Control-Allow-Methods", "DELETE, PUT, PATCH, GET, POST");
     res.setHeader("Content-Type", "application/json");
     next();
 });
