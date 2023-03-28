@@ -13,7 +13,6 @@ app.use(
     })
 );
 app.use(function (req, res, next) {
-    res.setHeader("Permissions-Policy", "interest-cohort=()");
     res.setHeader("Content-Type", "application/json");
     next();
 });
